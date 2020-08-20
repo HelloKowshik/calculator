@@ -33,7 +33,8 @@ operator[i].addEventListener('click',e=>{
     input.innerHTML = newString;
   }
   else if(currentString.length === 0){
-    console.log("enter a number first");
+    // console.log("enter a number first");
+    alert("enter a number first");
   }
   else{
     input.innerHTML += e.target.innerHTML;
@@ -45,10 +46,10 @@ result.addEventListener('click',e=>{
   let inputString = input.innerHTML;
   let numbers = inputString.split(/\+|\-|\×|\÷/g);
   let operators = inputString.replace(/[0-9]|\./g, "").split("");
-  console.log('input String:',inputString);
-  console.log('operators: ',operators);
-  console.log('numbers: ',numbers);
-  console.log("----------------------------");
+  // console.log('input String:',inputString);
+  // console.log('operators: ',operators);
+  // console.log('numbers: ',numbers);
+  // console.log("----------------------------");
   let divide = operators.indexOf('÷')
   let multiply = operators.indexOf("×");
   let subtract = operators.indexOf("-");
